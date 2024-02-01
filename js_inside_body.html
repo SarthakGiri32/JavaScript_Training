@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Adding JS code inside body section
+        </title>
+    </head>
+
+    <body>
+        <script>
+            function changeText(){
+                document.getElementById("change_text").innerHTML = "Content changed!";
+            }
+        </script>
+        <h2>
+            Adding JS code inside body section
+        </h2>
+
+        <h3 id="change_text" style="color: blue;">
+            Original Text
+        </h3>
+
+        <button type="button" onclick="changeText()">
+            Change Text button
+        </button>
+    </body>
+</html>
