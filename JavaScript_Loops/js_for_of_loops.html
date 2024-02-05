@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            for of loop in JS
+        </title>
+    </head>
+
+    <body>
+        <h2>
+            for of loop in JS
+        </h2>
+        <script>
+            // Array of numbers
+            let numArray = [1, 4, 16, 25, 49];
+
+            console.log("Elements of numArray are->");
+
+            // for...of Loop
+            for (let value of numArray) {
+                console.log(value);
+            }
+
+            // String object
+            let st = "SarthakGiri";
+
+            // for..of loop
+            console.log("Elements of string st are->");
+            for (let value of st) {
+                console.log(value);
+            }
+
+            // Iterating over argument objects
+            function Geeks() {
+                for (let value of arguments) {
+                    console.log(value);
+                }
+            }
+
+            // Iterating over all arguments passed
+            // through the function
+            Geeks("Geeks", "for", "Geeks");
+
+            // Map is an object that takes key-value pair as input
+            let mapObject = new Map([
+                ["Geeks", 1],
+                ["For", 2],
+                ["geeks", 3],
+            ]);
+
+            console.log("Display of Key-Value Pair->")
+            for (entry of mapObject) {
+                console.log(entry);
+            }
+
+            console.log("Display of Value only->")
+            for ([key, value] of mapObject) {
+                console.log(value);
+            }
+
+        </script>
+    </body>
+</html>
