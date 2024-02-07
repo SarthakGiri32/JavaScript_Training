@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Arrow functions in JS
+        </title>
+    </head>
+
+    <body>
+        <h2>
+            Arrow functions in JS
+        </h2>
+        <p id="geeks"></p> 
+        <script>
+            const a = ["Hydrogen", "Helium", "Lithium", "Beryllium"];
+
+            const a2 = a.map(function (s) {
+                return s.length;
+            });
+
+            console.log("Normal way ", a2); // [8, 6, 7, 9]
+
+            const a3 = a.map((s) => s.length);
+
+            console.log("Using Arrow Function ", a3); // [8, 6, 7, 9]
+
+            const var1 = (num1, num2) => num1 * num2; 
+      
+            document.getElementById("geeks").innerHTML = var1(5, 5); 
+
+        </script>
+      
+    </body>
+</html>

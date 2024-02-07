@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+		Function Constructor 
+	</title> 
+</head> 
+
+<body> 
+	
+	<h2>Function Constructor</h2> 
+	
+	<p id="geeks"></p> 
+	
+	<script> 
+		var GFG = new Function("num1", "num2", "return num1 * num2"); 
+		
+		document.getElementById("geeks").innerHTML = GFG(25, 4); 
+	</script> 
+</body> 
+
+</html>					 
